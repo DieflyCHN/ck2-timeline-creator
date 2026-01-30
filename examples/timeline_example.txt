@@ -1,0 +1,146 @@
+=== CK2 TIMELINE ===
+
+0753.01.01  Unknown_Name  获得 Bourbon伯爵头衔
+0769.01.01  世代0 Unknown_Name  即 Bourbon伯爵位
+0792.08.11  Bourbon伯爵 Unknown_Name  去世
+
+0792.08.11  世代1 Eleanor I 即 Bourbon公爵位
+0792.08.11  Eleanor I 获得 Bourbon伯爵头衔
+0802.01.29  Eleanor I 获得 La_marche伯爵头衔
+0804.04.11  Eleanor I 获得 Limousin伯爵头衔
+0805.11.10  Eleanor I 获得 Bourbon公爵头衔
+0835.11.20  Eleanor I 获得 Lusignan伯爵头衔
+0835.12.10  Eleanor I 获得 Bordeaux伯爵头衔
+0841.09.27  Unknown_Name  获得 Vaud伯爵头衔
+0844.01.28  Unknown_Name  获得 Auvergne公爵头衔
+0844.01.28  Unknown_Name  获得 Auvergne伯爵头衔
+0844.01.28  Unknown_Name  获得 Aurillac伯爵头衔
+0847.07.26  Bourbon公爵 Eleanor I 去世
+
+0847.07.26  世代2 Louis I 即 Bourbon公爵位
+0847.07.26  Louis I 获得 Bourbon公爵头衔
+0847.07.26  Louis I 获得 Bourbon伯爵头衔
+0847.07.26  Louis I 获得 Limousin伯爵头衔
+0847.07.26  Louis I 获得 La_marche伯爵头衔
+0850.10.12  Unknown_Name  获得 Saumur伯爵头衔
+0851.04.08  Louis I 获得 Sancerre伯爵头衔
+0851.04.10  Louis I 获得 Berry公爵头衔
+0854.09.15  Bourbon公爵 Louis I 去世
+
+0854.09.15  世代3 Unknown_Name  即 Bourbon公爵位
+0854.09.15  Unknown_Name  获得 Berry公爵头衔
+0854.09.15  Unknown_Name  获得 Sancerre伯爵头衔
+0854.09.15  Unknown_Name  获得 Bourbon公爵头衔
+0854.09.15  Unknown_Name  获得 Bourbon伯爵头衔
+0854.09.15  Unknown_Name  获得 Limousin伯爵头衔
+0854.09.15  Unknown_Name  获得 La_marche伯爵头衔
+0868.01.31  Unknown_Name  获得 Viviers伯爵头衔
+0875.08.02  Bourbon公爵 Unknown_Name  去世
+
+0875.08.02  世代4 Louis II 即 Bourbon公爵位
+0875.08.02  Louis II 获得 Auvergne公爵头衔
+0875.08.02  Louis II 获得 Auvergne伯爵头衔
+0875.08.02  Louis II 获得 Aurillac伯爵头衔
+0875.08.02  Louis II 获得 Bourbon公爵头衔
+0875.08.02  Louis II 获得 Bourbon伯爵头衔
+0875.08.02  Louis II 获得 Limousin伯爵头衔
+0875.08.02  Louis II 获得 La_marche伯爵头衔
+0882.07.04  Bourbon公爵 Louis II 去世
+
+0882.07.04  世代5 Philip I 即 Bourbon公爵位
+0882.07.04  Philip I 获得 Auvergne公爵头衔
+0882.07.04  Philip I 获得 Auvergne伯爵头衔
+0882.07.04  Philip I 获得 Aurillac伯爵头衔
+0882.07.04  Philip I 获得 Bourbon公爵头衔
+0882.07.04  Philip I 获得 Bourbon伯爵头衔
+0882.07.04  Philip I 获得 Limousin伯爵头衔
+0882.07.04  Philip I 获得 La_marche伯爵头衔
+0907.08.18  Philip I 获得 Montpellier伯爵头衔
+0918.02.01  Louis III 获得 Perigord伯爵头衔
+0921.11.03  Philip I 获得 Angouleme伯爵头衔
+0921.12.19  Philip I 获得 Provence伯爵头衔
+0923.08.17  Philip I 获得 Toulouse伯爵头衔
+0924.09.05  Philip I 获得 Albret伯爵头衔
+0941.02.22  Philip I 获得 Foix伯爵头衔
+0941.08.31  Philip I 获得 Labourd伯爵头衔
+0944.05.10  Bourbon公爵 Philip I 去世
+
+0944.05.10  世代6 Louis III 即 自建帝国皇帝位
+0944.05.10  Louis III 获得 Bourbon公爵头衔
+0944.05.10  Louis III 获得 Bourbon伯爵头衔
+0944.05.10  Louis III 获得 La_marche伯爵头衔
+0946.11.22  Louis III 获得 Carcassonne伯爵头衔
+0947.02.20  Louis III 获得 Navarra伯爵头衔
+0947.02.22  Louis III 获得 Auvergne公爵头衔
+0947.03.06  Louis III 获得 Aquitaine国国王头衔
+0948.02.03  Louis III 获得 Ile_de_france伯爵头衔
+0948.02.03  Louis III 获得 Orleans伯爵头衔
+0948.02.03  Louis III 获得 Sens伯爵头衔
+0948.02.04  Louis III 获得 Valois公爵头衔
+0948.02.04  Philip II 获得 La_marche伯爵头衔
+0951.01.03  Louis III 获得 Auvergne伯爵头衔
+0954.06.29  Louis III 获得 Venaissin伯爵头衔
+0957.05.08  Louis III 获得 Lotharingia国国王头衔
+0957.05.08  Louis III 获得 Brabant伯爵头衔
+0957.05.08  Louis III 获得 Hainaut伯爵头衔
+0957.05.08  Louis III 获得 Lorraine伯爵头衔
+0957.05.08  Louis III 获得 Luxembourg伯爵头衔
+0957.05.08  Louis III 获得 Loon伯爵头衔
+0957.05.08  Louis III 获得 Saargau伯爵头衔
+0957.05.16  Philip II 获得 Luxembourg伯爵头衔
+0957.05.17  Philip II 获得 Lorraine伯爵头衔
+0957.10.10  Louis III 获得 Barcelona公爵头衔
+0957.10.10  Louis III 获得 Urgell伯爵头衔
+0957.10.10  Louis III 获得 Rosello伯爵头衔
+0957.10.10  Louis III 获得 Empuries伯爵头衔
+0960.01.14  Louis III 获得 France国国王头衔
+0960.01.14  Louis III 获得 自建帝国皇帝头衔
+0960.01.15  Louis III 获得 Romagna国国王头衔
+0960.01.15  Louis III 获得 Papacy国国王头衔
+0960.01.15  Louis III 获得 Italy国国王头衔
+0960.01.15  Louis III 获得 Toscana公爵头衔
+0960.02.01  Louis III 获得 Roma伯爵头衔
+0960.02.02  Louis III 获得 Latium公爵头衔
+0960.03.08  Louis III 获得 Susa公爵头衔
+0960.03.08  Louis III 获得 Aquitaine公爵头衔
+0960.08.20  Louis III 获得 Burgundy国国王头衔
+0961.09.01  Louis III 获得 Salerno公爵头衔
+0961.09.01  Louis III 获得 Genoa公爵头衔
+0961.09.01  Louis III 获得 Champagne公爵头衔
+0961.09.01  Louis III 获得 Brie伯爵头衔
+0962.03.25  Louis III 获得 Lombardia公爵头衔
+0962.09.03  Louis III 获得 Provence公爵头衔
+0962.09.03  Louis III 获得 Forcalquier伯爵头衔
+0962.09.20  Louis III 获得 Foggia伯爵头衔
+0968.02.02  Louis III 获得 Saumur伯爵头衔
+0969.12.06  自建帝国皇帝 Louis III 去世
+
+0969.12.06  世代7 Philip II 即 自建帝国皇帝位
+0969.12.06  Philip II 获得 Brabant公爵头衔
+0969.12.06  Philip II 获得 Brabant伯爵头衔
+0969.12.06  Philip II 获得 Hainaut伯爵头衔
+0969.12.06  Philip II 获得 Saargau伯爵头衔
+0969.12.06  Philip II 获得 Latium公爵头衔
+0969.12.06  Philip II 获得 Aquitaine国国王头衔
+0969.12.06  Philip II 获得 Bourbon公爵头衔
+0969.12.06  Philip II 获得 Bourbon伯爵头衔
+0969.12.06  Philip II 获得 Barcelona公爵头衔
+0969.12.06  Philip II 获得 自建帝国皇帝头衔
+0970.03.21  Philip II 获得 Aragon公爵头衔
+0970.03.31  Philip II 获得 Capua公爵头衔
+0971.09.21  Philip II 获得 Italy国国王头衔
+0971.09.21  Philip II 获得 Burgundy国国王头衔
+0971.12.02  Philip II 获得 Lotharingia国国王头衔
+0971.12.02  Philip II 获得 Romagna国国王头衔
+0973.08.04  Philip II 获得 Tarragona伯爵头衔
+0974.01.18  Philip II 获得 Saluzzo伯爵头衔
+0975.11.14  Philip II 获得 Auvergne公爵头衔
+0977.02.21  Philip II 获得 Ferrara伯爵头衔
+0989.02.16  Philip II 获得 Burgundy公爵头衔
+0989.02.16  Philip II 获得 Dijon伯爵头衔
+0989.06.16  Philip II 获得 Aquitaine公爵头衔
+0989.07.24  Philip II 获得 Trier公爵头衔
+0989.08.01  Philip II 获得 Toscana公爵头衔
+0989.08.10  Philip II 获得 Modena公爵头衔
+0989.08.26  Philip II 获得 Savoie公爵头衔
+0989.09.15  Philip II 获得 Holland公爵头衔
