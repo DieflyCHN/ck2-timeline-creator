@@ -71,9 +71,11 @@ Place the `.ck2` file in the same directory as `CK2-Timeline_Creator.py`.
 1. Press `Win + R`
 2. Type `cmd`
 3. Press Enter
+
 **macOS**
 1. Open Spotlight (`Cmd + Space`)
 2. Type `Terminal`
+
 **Linux**
 1. Open your terminal emulator
 
