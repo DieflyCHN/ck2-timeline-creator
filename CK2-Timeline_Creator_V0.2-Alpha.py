@@ -4,7 +4,7 @@ import re
 
 print("""
 =========================================================
-CK2 Timeline Creator V0.2 Alpha
+CK2 Timeline Creator V0.2.1 Alpha
 ---------------------------------------------------------
 功能：
 从解压后的十字军之王2的 .ck2 存档（纯文本）中
@@ -35,6 +35,14 @@ V0.2 Alpha
 修复：
 1. 君主可能即“无头衔”位的错误
 （即此前并没有爵位，是当场获得的。以即位当日获取的最高爵位代替）
+---------------------------------------------------------
+V0.2.1 Alpha
+---------------------------------------------------------
+修复：
+1. 调整 Unknown_Name 的世次计数逻辑，使其与有名角色一致，避免世系语义歧义
+2. 重构即位 / 去世头衔判定逻辑
+   - primary_title 仅作为角色离世时的最高头衔使用
+   - 即位头衔改为通过 accession_title 按时间向前回溯确定
 =========================================================
 """
 
@@ -118,34 +126,37 @@ def format_title(t):
         return f"{location}伯爵"
     return f"Title: {t}"
 
-def infer_title_from_gain(ruler_id, accession_date):
+def infer_highest_title_up_to_date(ruler_id, query_date):
     """
-    如果即位时无头衔：
-    - 在 title_gain_table 中查找该 ruler 在即位当日获得的头衔
-    - 返回等级最高的一个（e > k > d > c）
-    - 若没有，返回 None
+    查询给定日期（含）之前，该角色曾获得过的最高头衔。
+
+    逻辑：
+    - 在 title_gain_table 中查找该 ruler 在 query_date 及之前的所有头衔获得记录
+    - 按等级优先级返回最高的一个（e > k > d > c）
+    - 若完全没有记录，返回 None
     """
 
-    acc_date = normalize_date(accession_date)
+    q_date = normalize_date(query_date)
 
-    # ① 找到即位当日的所有 title gain
-    same_day_gains = [
+    # ① 收集该日期及之前的所有 title gain
+    past_gains = [
         row["title"]
         for row in title_gain_table
-        if row["ruler"] == str(ruler_id) and row["date"] == acc_date
+        if row["ruler"] == str(ruler_id)
+        and normalize_date(row["date"]) <= q_date
     ]
 
-    if not same_day_gains:
+    if not past_gains:
         return None
 
-    # ② 按等级挑最高的
+    # ② 按等级优先级返回最高头衔
     for prefix in ("e_", "k_", "d_", "c_"):
-        for t in same_day_gains:
+        for t in past_gains:
             if t.startswith(prefix):
                 return t
 
-    # 理论上不会到这里，防御性返回
-    return same_day_gains[0]
+    # 防御性返回（理论上不会发生）
+    return past_gains[0]
 
 from collections import defaultdict
 # 君主名字计数器
@@ -381,27 +392,24 @@ for idx, rb in enumerate(ruler_blocks):
     chardata = m_char.group(0) if m_char else ""
     # ---- 角色名+世次----
     char_name = get_name_from_char()
-    if char_name != "Unknown_Name":
-        regnal_counter[char_name] += 1
-        regnal_number = to_roman(regnal_counter[char_name])
-    else:
-        regnal_number = ""
-    #primary_title = format_title(get_primary_title_from_char())
+    regnal_counter[char_name] += 1
+    regnal_number = to_roman(regnal_counter[char_name])
     # ---- 即位日期（裸日期字符串）----
     m_date = re.search(r'"(\d+\.\d+\.\d+)"', block)
     accession_date = m_date.group(1) if m_date else "unknown"
     # ---- 死亡日期（从角色块抓）----
     death_date = grab_char_value(r'd_d="(\d+\.\d+\.\d+)"')
-    # ---- 角色头衔确定 ----
-    primary_title = get_primary_title_from_char()
+    # ---- 角色即位头衔确定 ----
+    raw_title = infer_highest_title_up_to_date(ruler_id, accession_date)
+    accession_title = format_title(raw_title) if raw_title else "无头衔"
+    # ---- 角色去世（最高）头衔确定 ----
+    primary_title = get_primary_title_from_char() #读取存档中的最高头衔
     if primary_title.startswith("n_"):
-        inferred = infer_title_from_gain(ruler_id, accession_date)
-        if inferred:
-            primary_title = format_title(inferred)
-        else:
-            primary_title = format_title(primary_title)
+        #如果读不到最高头衔，标记为 Not Confirmed（通常意味着角色未死亡）
+        primary_title = "Not Confirmed"
     else:
         primary_title = format_title(primary_title)
+
     
 # ========================
 # 写入Timeline
@@ -412,7 +420,7 @@ for idx, rb in enumerate(ruler_blocks):
         "type": "ACCESSION",
         "ruler_index": idx,
         "char_name": char_name,
-        "primary_title": primary_title,
+        "accession_title": accession_title,
         "regnal_number": regnal_number
     })
 
@@ -452,7 +460,7 @@ with open(OUT_FILE, "w", encoding="utf-8") as out:
 
     for e in timeline:
         if e["type"] == "ACCESSION":
-            out.write(f'{e["date"]}  世代{e["ruler_index"]} {e["char_name"]} {e["regnal_number"]} 即 {e["primary_title"]}位\n')
+            out.write(f'{e["date"]}  世代{e["ruler_index"]} {e["char_name"]} {e["regnal_number"]} 即 {e["accession_title"]}位\n')
         elif e["type"] == "DEATH":
             out.write(f'{e["date"]}  {e["primary_title"]} {e["char_name"]} {e["regnal_number"]} 去世\n\n')
         elif e["type"] == "TITLE_GAIN":
